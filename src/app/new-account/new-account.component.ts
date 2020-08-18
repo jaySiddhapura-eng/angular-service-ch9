@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { LoggingService } from '../logging.service';
 import { AccountService } from '../account.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-new-account',
@@ -9,6 +10,7 @@ import { AccountService } from '../account.service';
   providers: [LoggingService]   // declare the service dependency provider to the angular
 })
 export class NewAccountComponent {
+
   
 
   // a variable with service type
