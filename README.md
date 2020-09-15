@@ -1,12 +1,20 @@
 # Services and Dependency  Injection
 
-## Introduction: Services
+## Table of Contents  
+* [Introduction Services](#Introduction-Services)<br>
+* [Creating a Service](#Creating-a-Service)<br>
+* [Injecting Service into The Component](#Injecting-Service-into-The-Component)<br>
+* [Hierarchical Injector](#Hierarchical-Injector)<br>
+* [Injecting Service in a Service](#Injecting-Service-in-a-Service)<br>
+* [Component to Component Communication using Service](#Component-to-Component-Communication-using-Service)<br>
+
+## Introduction Services
 
 1. A common piece of code which is used by multiple components without copying or replacing the code
 2. Safe analogy, Similar to the ISR (interrupt service routine) in embedded systems domain
 3. Results into much cleaner implementation of the app
 
-## Creating a service
+## Creating a Service
 
 1. Service does not need any decorator unless if other service are injected into the newly created service
 
@@ -33,7 +41,7 @@
    }
    ~~~
 
-## Injecting service into the component
+## Injecting Service into The Component
 
 1. Add providers array in ```@Component``` in ```app.module.ts``` file
 
@@ -123,7 +131,7 @@
    // at the child component by instance provided at child component
    ~~~
 
-## Provide service in a service
+## Injecting Service in a Service
 
 1. Consider there are two services
 
