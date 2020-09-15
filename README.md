@@ -10,11 +10,15 @@
 
 ## Introduction Services
 
+## 	[:arrow_up:](#Table-of-Contents )<br>
+
 1. A common piece of code which is used by multiple components without copying or replacing the code
 2. Safe analogy, Similar to the ISR (interrupt service routine) in embedded systems domain
 3. Results into much cleaner implementation of the app
 
 ## Creating a Service
+
+## 	[:arrow_up:](#Table-of-Contents )<br>
 
 1. Service does not need any decorator unless if other service are injected into the newly created service
 
@@ -42,6 +46,8 @@
    ~~~
 
 ## Injecting Service into The Component
+
+## 	[:arrow_up:](#Table-of-Contents )<br>
 
 1. Add providers array in ```@Component``` in ```app.module.ts``` file
 
@@ -93,6 +99,8 @@
 
 ## Hierarchical Injector
 
+## 	[:arrow_up:](#Table-of-Contents )<br>
+
 1. When service is provided at some component then Angular know how to create an instance if that service
 
 2. The single copy of the service instance by default supplied to 
@@ -132,6 +140,8 @@
    ~~~
 
 ## Injecting Service in a Service
+
+## 	[:arrow_up:](#Table-of-Contents )<br>
 
 1. Consider there are two services
 
@@ -196,6 +206,8 @@
    ~~~
 
 ## Component to Component Communication using Service
+
+## 	[:arrow_up:](#Table-of-Contents )<br>
 
 1. Declare event emitter in service, which will be eventually used to transfer data between component which has instance of this service
 
